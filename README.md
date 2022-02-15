@@ -7,8 +7,8 @@ A website that offers fitness training services.
 * HTML
 * CSS
 
-##Website
+## Website
 https://lernantino.github.io/RunBuddy
 
-##Contribution
+## Contribution
 Made with ❤️ by Christian
