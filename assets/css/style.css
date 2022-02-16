@@ -16,6 +16,14 @@ header {
     justify-content: space-between;
     padding: 20px 35px;
     background-color: #39a6b2;
+    position: sticky;
+    top: 0;
+    background-image: url("../images/hero-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-attachment: fixed;
+    background-position: 80%;
   }
 
   header h1 {
@@ -80,6 +88,9 @@ header {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    background-attachment: fixed;
+    background-position: 80%;
+
 
   }
 
@@ -100,12 +111,13 @@ header {
 
   /* Hero Style End */
   .hero-form {
+    
     border: 3px solid #024e76;
     background-color: #fce138;
     padding: 20px;
     width: 40%;
     color: #024e76;
-    position: absolute;
+    
     bottom: 120px;
     right: 140px;
     margin: 3.5%;
@@ -128,6 +140,7 @@ header {
     color: #024e76;
     width: 100%;
     margin-bottom: 15px;
+    background-color: rgba(255,255,255, 0.75);
   }
   .hero-form label {
     margin: 0 5px;
@@ -165,6 +178,7 @@ header {
   .intro p {
     /* add this alongside your other declarations */
     margin: 0 auto;
+    text-align: center;
   }
 
   .steps {
@@ -176,10 +190,13 @@ header {
   .section-title {
     font-size: 55px;
     color: #024e76;
-    margin-bottom: 35px;
     padding: 0 100px 20px 100px;
     display: inline-block;
     border-bottom: 3px solid;
+    padding-bottom: 20px;
+    text-align: center;
+    margin: 0 auto 35 px auto;
+    width: 50%;
   }
   
   .primary-border {
@@ -190,29 +207,20 @@ header {
     border-color: #39a6b2;
   }
 
-  .steps div {
-    margin-bottom: 80px;
-  }
+
   
-  .steps img {
-    width: 15%;
-    margin: 10px 0;
-  }
-  
-  .steps h3 {
+  .step h3 {
     color: #024e76;
     font-size: 46px;
-    margin-top: 10px;
+
   }
   
-  .steps p {
+  .step-text p {
     color: #39a6b2;
-    font-size: 23px;
+    font-size: 18px;
   }
 
-  .steps span {
-    font-size: 38px;
-  }
+
 
   .trainers {
     text-align: center;
@@ -313,3 +321,91 @@ header {
   }
   
   /* REACH OUT STYLES END */
+
+  .flex-row {
+    display: flex;
+  }
+
+  .step-text h4 {
+    font-size: 26px;
+    line-height: 1.5;
+    color: #024e76;
+  }
+
+  .step {
+    margin: 50px auto;
+    padding-bottom: 50px;
+    width: 80%;
+    border-bottom: 1px solid #39a6b2;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .step h3 {
+    flex: 1 30%;
+  }
+
+  .step-info {
+    flex: 2 70%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .step-img {
+    
+    width: 50%;
+    flex: 1 12%
+    margin-right: 20px;
+  }
+  
+  .step-text {
+    flex: 12;
+  }
+
+  .step-img img {
+    max-width: 100%;
+    display: flex;
+
+  }
+
+  header nav ul li a:hover {
+    background: #fce138;
+    color: #024e76;
+    border-radius: 15px;
+    text-shadow: none;
+  }
+  
+  .hero-form button:hover {
+    background-color: #39a6b2;  
+  }
+  
+  .contact-form button:hover {
+    color: #fce138;
+    background: #39a6b2;
+  }
+
+.form-input:focus {
+  background-color: rgba(255,255,255, 1);
+  outline: none;
+}
+
+.contact-form input, .contact-form textarea {
+  background-color: rgba(255,255,255, 1);
+  /* add a transparent background here */
+}
+
+/* create a new css rule for focus state */
+.contact-form input:focus, .contact-form textarea:focus {
+  background-color: rgba(255,255,255, 1);
+  outline: none;
+
+}
+
+.step:nth-child(even) {
+  border-bottom: 1px solid #39a6b2;
+}
+
+.step:not(:last-child) {
+  border-bottom: 1px solid #39a6b2;
+}
